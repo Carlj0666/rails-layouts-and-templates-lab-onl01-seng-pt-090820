@@ -1,4 +1,5 @@
 class StoreAdminController < ApplicationController
+  
   layout 'admin' #The default layout for not customized actions like orders or invoice
 
   def home
@@ -11,4 +12,5 @@ class StoreAdminController < ApplicationController
   def invoice #Uses default, but no layout
     render :layout => false
   end
+  
 end
